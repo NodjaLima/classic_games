@@ -1,24 +1,24 @@
-class Aposta {
-  constructor (dezena1, dezena2, dezena3, dezena4, dezena5, dezena6 ) {
-    this.dezena1 = dezena1;
-    this.dezena2 = dezena2;
-    this.dezena3 = dezena3;
-    this.dezena4 = dezena4;
-    this.dezena5 = dezena5;
-    this.dezena6 = dezena6;
-  }
-}
+// class Aposta {
+//   constructor (dezena1, dezena2, dezena3, dezena4, dezena5, dezena6 ) {
+//     this.dezena1 = dezena1;
+//     this.dezena2 = dezena2;
+//     this.dezena3 = dezena3;
+//     this.dezena4 = dezena4;
+//     this.dezena5 = dezena5;
+//     this.dezena6 = dezena6;
+//   }
+// }
 
-class Sorteio {
-  constructor (sorteado1, sorteado2, sorteado3, sorteado4, sorteado5, sorteado6) {
-    this.sorteado1 = sorteado1
-    this.sorteado2 = sorteado2
-    this.sorteado3 = sorteado3
-    this.sorteado4 = sorteado4
-    this.sorteado5 = sorteado5
-    this.sorteado6 = sorteado6
-  }
-}
+// class Sorteio {
+//   constructor (sorteado1, sorteado2, sorteado3, sorteado4, sorteado5, sorteado6) {
+//     this.sorteado1 = sorteado1
+//     this.sorteado2 = sorteado2
+//     this.sorteado3 = sorteado3
+//     this.sorteado4 = sorteado4
+//     this.sorteado5 = sorteado5
+//     this.sorteado6 = sorteado6
+//   }
+// }
 
 const aposta1 = $('#enviar').on('click', function apostar() {
   const numero1 = $('#numero1').val()
