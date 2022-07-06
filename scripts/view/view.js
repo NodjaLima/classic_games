@@ -13,4 +13,8 @@ class ExibeAposta {
 
         $('#sorteio').addClass('sorteio')
     }
+
+    mostrarResultado(resultado){
+        $('#resultado-comparado').html(`Você acertou os seguintes números: ${resultado}`)
+    }
 }

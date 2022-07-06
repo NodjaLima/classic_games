@@ -1,5 +1,5 @@
 body {
-  background-image: url(img/img_bingo_color.jpg);
+  background-image: url(../img/img_bingo_color.jpg);
   margin: 0px;
   padding: 0px;
   background-color: black;
@@ -7,8 +7,8 @@ body {
   background-attachment: scroll;
   background-size: cover;
   color: beige;
- text-align: center;
- margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .esconde-aposta {
