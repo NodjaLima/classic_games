@@ -1,5 +1,5 @@
 body {
-  background-color: beige;
+
   margin: 0px;
   padding: 0px;
   background-color: black;
@@ -13,6 +13,13 @@ body {
   
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
 #botoes {
   display: flex;
   max-width: 500px;
@@ -21,7 +28,7 @@ body {
   
 }
 
-.butao {
+.butao_verde {
   background-color: #04AA6D; /* Green */
   border: none;
   color: white;
@@ -36,6 +43,24 @@ body {
   width: 10%;
 }
 
+.butao_azul {
+  background-color: #3c15c9; /* Green */
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 10%;
+}
+
+#enviar {
+  width: 200px;
+}
 .esconde-aposta {
   display: none;
 }
