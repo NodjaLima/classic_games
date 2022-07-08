@@ -1,5 +1,5 @@
 body {
-  background-image: url(../img/img_bingo_color.jpg);
+  background-color: beige;
   margin: 0px;
   padding: 0px;
   background-color: black;
@@ -9,6 +9,31 @@ body {
   color: beige;
   text-align: center;
   margin-top: 20px;
+  align-items: center;
+  
+}
+
+#botoes {
+  display: flex;
+  max-width: 500px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  
+}
+
+.butao {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 10%;
 }
 
 .esconde-aposta {
@@ -28,7 +53,7 @@ body {
 }
 
 footer {
-  display: inline-block;
+  display: block;
   padding: 5px;
   background-color: black;
 }

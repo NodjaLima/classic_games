@@ -1,8 +1,7 @@
 class ApostaLoteria {
-    constructor(...dezenas) {
-        this.aposta = [dezenas[0], dezenas[1], dezenas[2], dezenas[3], dezenas[4], dezenas[5]]
-    }
-
+    
+    aposta = []
+    
     sorteio = []
 
     sorteiar = () => {
@@ -25,4 +24,6 @@ class ApostaLoteria {
         }
         return contador
     }
+
 }
+

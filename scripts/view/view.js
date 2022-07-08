@@ -18,3 +18,21 @@ class ExibeAposta {
         $('#resultado-comparado').html(`Você acertou os seguintes números: ${resultado}`)
     }
 }
+
+
+function createButton() {
+   
+    for (var i = 1; i < 100; i++) {
+   
+    var btn = document.createElement('button');
+    var lbl = document.createTextNode(`${i}`);        
+    btn.appendChild(lbl); 
+    btn.className = "butao"
+    btn.id = `numero${i}`
+    var div = document.getElementById('botoes')
+    div.appendChild(btn); 
+     
+    }
+}
+
+createButton()
