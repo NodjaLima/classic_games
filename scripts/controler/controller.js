@@ -2,7 +2,7 @@ class ApostaControle {
     criarAposta = new ApostaLoteria()
         
     pegarAposta = () => {
-
+        return aposta_final
     }
     
     sorteio() {
@@ -14,7 +14,8 @@ class ApostaControle {
 }
 
 
-$('#enviar').click(function () {
+$('#enviar').click(function (evento) {
+    evento.preventDefault()
     const showingAposta = new ApostaControle()
     showingAposta.showAposta.mostrarAposta(showingAposta.criarAposta.aposta);
 })
@@ -26,21 +27,6 @@ $('#sorteio').click(function (){
     showingSorteio.showAposta.mostrarResultado(showingSorteio.criarAposta.comparacao)
 })
 
-const aposta = []
-
-function clickTeclado(indice) {
-    
-   
-    if(aposta.length <=5) {
-
-        aposta.push(indice);
-
-           
-    };
-
-    console.log(aposta)
-
-  }
 
   
 
