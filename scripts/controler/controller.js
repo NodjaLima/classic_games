@@ -25,3 +25,8 @@ $('#sorteio').click(function (){
     showingSorteio.criarAposta.comparar()
     showingSorteio.showAposta.mostrarResultado(showingSorteio.criarAposta.comparacao)
 })
+
+
+$('.butao').click(()=>{
+    console.log($('.butao').html())
+})
