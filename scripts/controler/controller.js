@@ -1,11 +1,9 @@
 class ApostaControle {
-    criarAposta = new ApostaLoteria(
-        Number($('#numero1').val()),
-        Number($('#numero2').val()),
-        Number($('#numero3').val()),
-        Number($('#numero4').val()),
-        Number($('#numero5').val()),
-        Number($('#numero6').val()))
+    criarAposta = new ApostaLoteria()
+        
+    pegarAposta = () => {
+        
+    }
     
     sorteio() {
         this.criarAposta.sorteiar()
