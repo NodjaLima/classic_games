@@ -2,7 +2,7 @@ class ApostaControle {
     criarAposta = new ApostaLoteria()
         
     pegarAposta = () => {
-        
+
     }
     
     sorteio() {
@@ -26,7 +26,21 @@ $('#sorteio').click(function (){
     showingSorteio.showAposta.mostrarResultado(showingSorteio.criarAposta.comparacao)
 })
 
+const aposta = []
 
-$('.butao').click(()=>{
-    console.log($('.butao').html())
-})
+function clickTeclado(indice) {
+    
+   
+    if(aposta.length <=5) {
+
+        aposta.push(indice);
+
+           
+    };
+
+    console.log(aposta)
+
+  }
+
+  
+

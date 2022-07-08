@@ -19,16 +19,22 @@ class ExibeAposta {
     }
 }
 
+//função para criar os botoes. Achei melhor colocar os botoes em um formulario, porque acredito que no futuro pode ser melhor para manipular a aposta. Por exemplo: se a pessoa quiser trocar o numero da aposta? Minha ideia é deixar os botoes que foram clicados, marcados e quando a pessoa enviar a aposta, confirmar os numeros. Por essa razão eu coloquei tantos atributos nos botoes, porque na verdade só estamos usando mesmo o onclick no js e a class no css. Nem o id estamos usando.
+//porém, acredito que a melhor forma de fazer seja pelo forms. Exemplo: seleciona os numeros e quando submeter o formulario é que pegamos os valores marcados, atraves dos botoes destacados
+
 
 function createButton() {
    
     for (var i = 1; i < 100; i++) {
    
-        var btn = document.createElement('button');
+        var btn = document.createElement('input');
         var lbl = document.createTextNode(`${i}`);        
         btn.appendChild(lbl); 
         btn.className = "butao"
-        btn.id = `${i}`
+        btn.value = `${i}`
+        btn.type = 'button'
+        btn.setAttribute("form", `botoes`)
+        btn.setAttribute("onclick", `clickTeclado(${i})`)
         var div = document.getElementById('botoes')
         div.appendChild(btn); 
         
